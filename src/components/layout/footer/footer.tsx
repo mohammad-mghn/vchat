@@ -1,9 +1,9 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
-import { FooterSvg, Logo } from "@/assets/svgs";
 import { footer } from "@/constants";
-import Link from "next/link";
+import { FooterSvg, Logo } from "@/assets/svgs";
 
 const Footer = () => {
   return (
@@ -16,8 +16,8 @@ const Footer = () => {
         className="w-52 md:w-96 absolute -top-16 md:-top-1/2 -right-24 md:-right-24"
       />
 
-      <div className="relative p-6 md:p-10 flex flex-col md:flex-row items-start md:items-end justify-between gap-y-6">
-        <div className="w-full md:w-1/2 text-[.75rem] md:text-sm text-gray-500 space-y-5 md:space-y-10">
+      <div className="relative p-6 md:p-10 flex flex-col md:flex-row items-end justify-between gap-y-10">
+        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-[.75rem] md:text-sm text-gray-500 gap-y-5 md:gap-y-10">
           <Image
             src={Logo}
             alt="v chat logo"
@@ -26,12 +26,12 @@ const Footer = () => {
             className="w-32 md:w-fit"
           />
 
-          <p className="max-w-[25rem] !leading-relaxed">
+          <p className="max-w-[25rem] !leading-relaxed text-center md:text-start">
             Ready to elevate your online presence? Contact us today to discuss
             your project and discover how we can bring your vision to life.
           </p>
 
-          <p>
+          <p className="text-center md:text-start">
             Made with <span className="text-lg">💙</span> and{" "}
             <span className="text-lg">🥤</span> powered by{" "}
             <a
@@ -43,19 +43,19 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-x-4">
+        <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end gap-x-4">
           {footer.links.map((link, index) => (
             <Link
               href={link.address}
               key={index}
-              className="p-4  md:bg-box border border-light rounded-full"
+              className="group p-3 md:p-4 md:bg-box hover:bg-none hover:!bg-light hover:!bg-opacity-75 border border-light rounded-full transition-colors duration-300"
             >
               <Image
                 src={link.icon}
                 alt={link.name}
                 width={15}
                 height={15}
-                className="w-3 h-3"
+                className="w-3 md:w-4 h-3 md:h-4 group-hover:invert transition-colors duration-300"
               />
             </Link>
           ))}
