@@ -1,9 +1,10 @@
-import { QAndAs } from "@/constants";
 import React from "react";
-import QAndA from "./QAndA";
-import Button from "../elements/button";
 import Image from "next/image";
-import { EnterIcon, SendIcon } from "@/assets/icons";
+
+import QAndABoxes from "./QAndA";
+import { Button } from "@/components/elements";
+
+import { EnterIcon } from "@/assets/icons";
 
 const QAndASection = () => {
   return (
@@ -28,7 +29,7 @@ const QAndASection = () => {
         </Button>
       </div>
 
-      <QAndA />
+      <QAndABoxes />
     </section>
   );
 };

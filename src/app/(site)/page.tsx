@@ -1,31 +1,31 @@
 import {
   Hero,
-  Features,
+  WhatWeDo,
   FinalTalk,
-  PhoneNews,
   Statistics,
-  GetInTouch,
-  Development,
   QAndASection,
+  MobileAppFeatures,
   GraduatesCompanies,
-} from "@/components";
+  DevelopmentDetails,
+} from "@/components/home";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
     <main className="space-y-32 lg:space-y-48">
       <Hero />
 
-      <Features />
+      <WhatWeDo />
 
-      <Development />
+      <DevelopmentDetails />
 
       <GraduatesCompanies />
 
-      <PhoneNews />
+      <MobileAppFeatures />
 
       <Statistics />
 
-      <GetInTouch />
+      <Contact />
 
       <QAndASection />
 

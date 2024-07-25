@@ -1,20 +1,20 @@
 import React from "react";
 import Image from "next/image";
 
-import { phoneNews } from "@/constants";
 import { AppSamples } from "@/assets/svgs";
+import { mobileAppFeatures } from "@/constants/home";
 
-const PhoneNews = () => {
+const MobileAppFeatures = () => {
   return (
     <div className="mx-auto max-w-[30rem] lg:max-w-fit flex flex-col lg:flex-row items-center justify-between gap-y-10">
       <div className="space-y-10 lg:space-y-20 w-full lg:w-1/3">
-        {phoneNews.map((phoneNews) => (
-          <div key={phoneNews.id} className="space-y-5">
+        {mobileAppFeatures.map((feature) => (
+          <div key={feature.id} className="space-y-5">
             <div className="flex items-center gap-x-4">
               <div className="p-2 bg-secondary rounded-xl">
                 <Image
-                  src={phoneNews.icon}
-                  alt={phoneNews.heading}
+                  src={feature.icon}
+                  alt={feature.heading}
                   width={20}
                   height={20}
                   className="w-4 lg:w-5 h-4 lg:h-5 pointer-events-none"
@@ -22,16 +22,16 @@ const PhoneNews = () => {
               </div>
 
               <h3 className="text-light text-[0.75rem] font-semibold uppercase">
-                {phoneNews.heading}
+                {feature.heading}
               </h3>
             </div>
 
             <h2 className="text-2xl lg:text-3xl font-bold text-light">
-              {phoneNews.title}
+              {feature.title}
             </h2>
 
             <p className="text-sm lg:text-base text-gray-500">
-              {phoneNews.description}
+              {feature.description}
             </p>
           </div>
         ))}
@@ -50,4 +50,4 @@ const PhoneNews = () => {
   );
 };
 
-export default PhoneNews;
+export default MobileAppFeatures;

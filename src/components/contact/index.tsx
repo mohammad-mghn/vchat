@@ -1,8 +1,8 @@
 import React from "react";
 
-import GetInTouchForm from "./form";
+import ContactForm from "./form";
 
-const GetInTouch = () => {
+const Contact = () => {
   return (
     <section className="flex flex-col items-center gap-y-4">
       <h2 className="text-3xl sm:text-4xl lg:text-5xl text-light font-bold">
@@ -13,9 +13,9 @@ const GetInTouch = () => {
         template based on components.
       </p>
 
-      <GetInTouchForm />
+      <ContactForm />
     </section>
   );
 };
 
-export default GetInTouch;
+export default Contact;

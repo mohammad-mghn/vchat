@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import { Button } from "@/components";
+import { Button } from "@/components/elements";
 
 import { TriangleArrowIcon } from "@/assets/icons";
 
