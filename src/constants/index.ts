@@ -1,7 +1,7 @@
 export {
   QAndAs,
-  phoneNews,
   development,
+  mobileAppFeatures,
   graduatesCompanies,
   unlimitedAdvantages,
 } from "./home";
