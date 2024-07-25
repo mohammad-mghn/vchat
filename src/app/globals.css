@@ -1,15 +1,15 @@
 @tailwind base;
-@tailwind components;
 @tailwind utilities;
+@tailwind components;
 
-.no span {
-  height: 99% !important;
-}
+/* .no span {
+  height: 100% !important;
+} */
 
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 input {
   outline: none;
   background: none;

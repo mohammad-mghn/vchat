@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import HeroBoxes from "./boxes";
-import Button from "../elements/button";
+import { Button } from "@/components/elements";
 
 import { PlayIcon } from "@/assets/icons";
 import { HeroBackground } from "@/assets/svgs";
@@ -48,6 +48,8 @@ const Hero = () => {
           <Image
             src={HeroBackground}
             alt="background"
+            width={1080}
+            height={1120}
             className="pointer-events-none"
           />
         </div>

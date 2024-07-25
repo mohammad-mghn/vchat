@@ -27,24 +27,23 @@ const Footer = () => {
           />
 
           <p className="max-w-[25rem] !leading-relaxed text-center md:text-start">
-            Ready to elevate your online presence? Contact us today to discuss
-            your project and discover how we can bring your vision to life.
+            {footer.caption}
           </p>
 
           <p className="text-center md:text-start">
             Made with <span className="text-lg">💙</span> and{" "}
             <span className="text-lg">🥤</span> powered by{" "}
             <a
-              href="https://vito-dev.ir"
+              href={`https://${footer.owner.portfolioAddr}`}
               className="text-gray-100 font-medium hover:underline"
             >
-              vito-dev.ir
+              {footer.owner.name}
             </a>
           </p>
         </div>
 
         <div className="w-full md:w-1/2 flex items-center justify-center md:justify-end gap-x-4">
-          {footer.links.map((link, index) => (
+          {footer.socialLinks.map((link, index) => (
             <Link
               href={link.address}
               key={index}

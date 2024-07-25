@@ -23,6 +23,8 @@ export { default as pintrestIcon } from "./companies/pintrest.svg";
 
 // social
 export { default as TiktokIcon } from "./social/tiktok.svg";
+export { default as GithubIcon } from "./social/github.svg";
 export { default as DribbleIcon } from "./social/dribble.svg";
 export { default as LinkedInIcon } from "./social/linkedin.svg";
+export { default as TelegramIcon } from "./social/telegram.svg";
 export { default as InstagramIcon } from "./social/instagram.svg";

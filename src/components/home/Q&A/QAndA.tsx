@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import { QAndAs } from "@/constants";
 
-const QAndA = () => {
+const QAndABoxes = () => {
   const [openedId, setOpenedId] = useState<null | number>(0);
 
   const openHandler = (itemId: number) => {
@@ -72,4 +72,4 @@ const QAndA = () => {
   );
 };
 
-export default QAndA;
+export default QAndABoxes;

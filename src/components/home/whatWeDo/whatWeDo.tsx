@@ -2,8 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import ThirdPartyAuth from "../elements/third-party-auth";
-import Button from "../elements/button";
+import AIChatBox from "./aiChatBox";
+import { Button } from "../../elements";
+import { ThirdPartyAuth } from "../../auth";
 
 import {
   FireIcon,
@@ -14,11 +15,10 @@ import {
   CheckBoxIcon,
   PlayButtonIcon,
 } from "@/assets/icons";
-import { StaticsSvg, VideoBackground } from "@/assets/svgs";
-import AIChatBox from "./aiChatBox";
 import { unlimitedAdvantages } from "@/constants";
+import { StaticsSvg, VideoBackground } from "@/assets/svgs";
 
-const Features = () => {
+const WhatWeDo = () => {
   const boxClasses = "p-4 lg:p-6 bg-box border border-light rounded-3xl";
 
   const groupClasses = "flex flex-col gap-4 lg:gap-6";
@@ -173,4 +173,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default WhatWeDo;

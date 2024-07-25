@@ -12,7 +12,7 @@ type props = {
   parentClassName?: string;
 };
 
-const GetInTouchInput = ({
+const ContactInput = ({
   type,
   value,
   label,
@@ -58,4 +58,4 @@ const GetInTouchInput = ({
   );
 };
 
-export default GetInTouchInput;
+export default ContactInput;

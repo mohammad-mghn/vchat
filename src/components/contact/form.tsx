@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import React, { useState } from "react";
 
 import GetInTouchInput from "./input";
-import Button from "../elements/button";
+import { Button } from "@/components/elements";
 
 type formType = {
   name: string;
@@ -12,7 +12,7 @@ type formType = {
   email: string;
 };
 
-const GetInTouchForm = () => {
+const ContactForm = () => {
   const [emailSent, setEmailSent] = useState(false);
 
   const validateForm = ({ email, name, body }: formType) => {
@@ -107,4 +107,4 @@ const GetInTouchForm = () => {
   );
 };
 
-export default GetInTouchForm;
+export default ContactForm;
