@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import { AppSamples } from "@/assets/svgs";
-import { mobileAppFeatures } from "@/constants/home";
+import { mobileAppFeatures } from "@/constants";
 
 const MobileAppFeatures = () => {
   return (
