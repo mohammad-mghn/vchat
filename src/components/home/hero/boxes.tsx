@@ -34,7 +34,7 @@ const HeroBoxes = () => {
           <Image
             src={WalletBox}
             alt="app components"
-            className="ml-auto lg:absolute right-4 lg:right-4 top-80 lg:top-2/3 w-[55%] sm:w-fit pointer-events-none"
+            className="ml-auto !-mt-14 lg:!mt-0 lg:absolute right-4 lg:right-4 top-80 lg:top-2/3 w-[55%] sm:w-fit pointer-events-none"
           />
         </div>
       </MouseParallax>

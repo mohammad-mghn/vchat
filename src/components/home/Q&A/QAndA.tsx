@@ -13,7 +13,7 @@ const QAndABoxes = () => {
   };
 
   return (
-    <div className="w-full md:w-1/2 space-y-4">
+    <div className="w-full lg:w-1/2 space-y-4">
       {QAndAs.map((item) => {
         const { id, question, answer } = item;
 

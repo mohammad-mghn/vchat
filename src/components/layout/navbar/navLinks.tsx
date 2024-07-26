@@ -6,7 +6,11 @@ import { usePathname } from "next/navigation";
 
 import { navLinks } from "@/constants";
 
-const NavLinks = () => {
+type props = {
+  toggleMenu: () => void;
+};
+
+const NavLinks = ({ toggleMenu }: props) => {
   const currentPathname = usePathname();
 
   return (
@@ -15,6 +19,7 @@ const NavLinks = () => {
         {navLinks.map((link) => (
           <li
             key={link.id}
+            onClick={toggleMenu}
             className={`text-base font-medium ${
               currentPathname === link.path ? "text-light" : "text-gray-500"
             } hover:text-gray-200 transition-colors duration-300`}

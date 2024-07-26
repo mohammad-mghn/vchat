@@ -5,7 +5,7 @@ import { graduatesCompanies } from "@/constants";
 
 const GraduatesCompanies = () => {
   return (
-    <section>
+    <section className="mx-auto max-w-[25rem] lg:max-w-fit">
       <h2 className="text-xl lg:text-2xl text-light font-semibold text-center lg:text-start">
         Trusted by the fastest growing companies
       </h2>

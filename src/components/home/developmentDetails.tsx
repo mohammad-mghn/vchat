@@ -8,7 +8,7 @@ import { TriangleArrowIcon } from "@/assets/icons";
 
 const DevelopmentDetails = () => {
   return (
-    <section className="mx-auto lg:mx-10 xl:mx-20 max-w-[22rem] lg:max-w-fit flex flex-col lg:flex-row justify-between gap-y-16 lg:gap-10">
+    <section className="mx-auto lg:mx-10 xl:mx-20 max-w-[25rem] lg:max-w-fit flex flex-col lg:flex-row justify-between gap-y-16 lg:gap-10">
       <div className="space-y-14 xl:space-y-20 xl:w-2/5">
         {development.features.map((feature) => (
           <div
@@ -32,7 +32,7 @@ const DevelopmentDetails = () => {
             <p className="text-sm text-gray-500">{slogan.description}</p>
 
             <Button
-              className="group !mt-4 py-3 sm:max-w-fit flex items-center justify-center gap-x-5"
+              className="group !mt-4 py-3 w-full lg:w-fit flex items-center justify-center gap-x-5"
               href={slogan.linkAddr}
             >
               <span>{slogan.linkTitle}</span>

@@ -36,7 +36,7 @@ const Navbar = () => {
         <MenuButton {...{ toggleMenu, isMenuOpen }} />
       </div>
 
-      <NavLinks />
+      <NavLinks toggleMenu={toggleMenu} />
 
       <div className="flex flex-row-reverse lg:flex-row items-center justify-end lg:justify-start gap-x-2 overflow-visible">
         <Button background="bg-transparent" href="/register">

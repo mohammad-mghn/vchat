@@ -5,7 +5,7 @@ import { SimplificationStatisticsSvg } from "@/assets/svgs";
 
 const Statistics = () => {
   return (
-    <section className="flex flex-col items-center text-center">
+    <section className="mx-auto max-w-[25rem] lg:max-w-fit flex flex-col items-center text-center">
       <h2 className="sm:max-w-[35rem] lg:max-w-[50rem] text-light text-2xl sm:text-4xl lg:text-5xl font-extrabold !leading-normal">
         Use Quickit to simplify{" "}
         <span className="text-primary">building and maintaining layouts</span>
