@@ -20,7 +20,7 @@ input {
 }
 
 .waving {
-  animation: waving 2s ease-in-out;
+  animation: waving 2s infinite ease-in-out;
 }
 @keyframes waving {
   0% {
@@ -29,7 +29,7 @@ input {
   50% {
     margin-top: 0;
   }
-  0% {
+  100% {
     margin-top: 2rem;
   }
 }
