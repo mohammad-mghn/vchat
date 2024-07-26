@@ -26,7 +26,7 @@ const WhatWeDo = () => {
   const highlightText = "font-bold text-primary";
 
   return (
-    <section className="mx-auto max-w-[22rem] lg:max-w-full text-light">
+    <section className="mx-auto max-w-[25rem] lg:max-w-full text-light">
       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center lg:text-start">
         What We Do
       </h1>

@@ -8,7 +8,7 @@ import {
   GraduatesCompanies,
   DevelopmentDetails,
 } from "@/components/home";
-import Contact from "@/components/contact";
+import { Contact } from "@/components";
 
 export default function Home() {
   return (

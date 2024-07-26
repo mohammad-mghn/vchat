@@ -53,7 +53,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="mt-5 lg:mt-10 w-full lg:max-w-[60rem] md:grid grid-cols-3 grid-rows-3 gap-4 space-y-4 md:space-y-0"
+      className="mt-5 lg:mt-10 w-full max-w-[25rem] lg:max-w-[60rem] lg:grid grid-cols-3 grid-rows-3 gap-4 space-y-4 lg:space-y-0"
     >
       <GetInTouchInput
         value={formik.email}
@@ -84,7 +84,7 @@ const ContactForm = () => {
 
       <Button
         type={"submit"}
-        className={`!mt-12 relative md:!mt-4 h-14 w-full ${
+        className={`!mt-12 lg:!mt-4 relative h-14 w-full ${
           emailSent && "!bg-green"
         } overflow-hidden transition-colors !duration-1000`}
       >

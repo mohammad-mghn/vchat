@@ -7,8 +7,8 @@ import { TriangleArrowIcon } from "@/assets/icons";
 
 const FinalTalk = () => {
   return (
-    <section className="flex flex-col items-center text-center gap-y-4">
-      <h2 className="max-w-[20rem] sm:max-w-[30rem] lg:max-w-[40rem] text-xl sm:text-4xl lg:text-5xl text-light font-bold !leading-relaxed">
+    <section className="mx-auto max-w-[25rem] lg:max-w-[40rem] flex flex-col items-center text-center gap-y-4">
+      <h2 className="text-xl sm:text-3xl lg:text-5xl text-light font-bold !leading-relaxed">
         Move fast, stay aligned, and build better -{" "}
         <span className="text-primary">together</span>
       </h2>
@@ -19,7 +19,7 @@ const FinalTalk = () => {
       </p>
 
       <Button
-        className="group mt-2 py-2 sm:py-3 !px-5 lg:px-8 sm:max-w-fit flex items-center justify-center gap-x-5"
+        className="group mt-2 py-2 sm:py-3 !px-5 lg:px-8 w-full lg:w-fit sm:max-w-fit flex items-center justify-center gap-x-5"
         href={"/services"}
       >
         <span>Get Early Access</span>
