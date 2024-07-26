@@ -1,4 +1,5 @@
 export { default as Logo } from "./logo.svg";
+export { default as AboutSVG } from "./about.svg";
 export { default as FooterSvg } from "./footer.svg";
 export { default as ChatBox } from "./hero/chat.svg";
 export { default as StaticsSvg } from "./statics.svg";
