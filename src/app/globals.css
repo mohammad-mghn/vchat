@@ -2,10 +2,6 @@
 @tailwind utilities;
 @tailwind components;
 
-/* .no span {
-  height: 100% !important;
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -21,4 +17,19 @@ body {
 input {
   outline: none;
   background: none;
+}
+
+.waving {
+  animation: waving 2s ease-in-out;
+}
+@keyframes waving {
+  0% {
+    margin-top: 2rem;
+  }
+  50% {
+    margin-top: 0;
+  }
+  0% {
+    margin-top: 2rem;
+  }
 }
