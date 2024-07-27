@@ -18,9 +18,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={`mt-6 px-4 lg:px-0 py-3 ${
-        isMenuOpen ? "h-[16rem] lg:h-fit" : "h-[3.5rem]"
-      } flex lg:flex flex-col lg:flex-row lg:items-center lg:justify-between gap-y-2 overflow-hidden lg:overflow-visible rounded-2xl bg-dark lg:bg-none bg-opacity-60 backdrop-blur-xl lg:backdrop-blur-none border border-light lg:border-none shadow-shadow-dark lg:shadow-none transition-all duration-500 z-50`}
+      className={`px-4 lg:px-0 py-3 lg:py-0 ${
+        isMenuOpen ? "h-[16.5rem] lg:h-fit" : "h-[3.5rem]"
+      } absolute top-6 mx-auto w-[calc(100%-48px)] max-w-[83rem] lg:flex flex-col lg:flex-row lg:items-center lg:justify-between gap-y-2 overflow-hidden lg:overflow-visible rounded-2xl bg-dark lg:bg-none bg-opacity-60 backdrop-blur-xl lg:backdrop-blur-none border border-light lg:border-none shadow-shadow-dark lg:shadow-none transition-all duration-500 z-50`}
     >
       <div className="w-full lg:w-fit flex items-center justify-between overflow-visible">
         <div className="lg:pr-10">

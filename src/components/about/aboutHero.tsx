@@ -9,7 +9,7 @@ import { GithubIcon } from "@/assets/icons";
 
 const AboutHero = () => {
   const buttonClasses =
-    "px-4 md:px-6 py-3 md:py-5 w-[15rem] sm:w-fit flex items-center justify-center text-[0.6rem] md:text-sm font-bold group-hover/button:font-extrabold";
+    "px-4 md:px-6 py-2 md:py-4 w-[15rem] sm:w-fit flex items-center justify-center text-[0.6rem] md:text-sm font-bold group-hover/button:font-extrabold";
 
   return (
     <section className="mt-20 md:mt-32 relative flex flex-col items-center gap-y-5 text-center">

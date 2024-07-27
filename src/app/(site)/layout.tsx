@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import { Footer, Navbar } from "@/components/layout";
+import { ScrollToTop } from "@/components/elements";
 
 export const metadata: Metadata = {
   title: "V Business Chat 🤝",
@@ -16,15 +17,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
+    <div className="px-6 pt-20 lg:mx-auto relative xl:max-w-[86rem] lg:space-y-5">
       {/* position relative is for the hero background svg that has a absolute position. */}
-      <div className="px-6 lg:mx-auto relative xl:max-w-[86rem] lg:space-y-5">
-        <Navbar />
+      <Navbar />
 
-        {children}
+      {children}
 
-        <Footer />
-      </div>
-    </>
+      <ScrollToTop />
+
+      <Footer />
+    </div>
   );
 }

@@ -13,7 +13,9 @@ import { TriangleArrowIcon } from "@/assets/icons";
 
 const AboutMembers = () => {
   const members = about.members.members;
+
   const middleMemberIndex = Math.round(members.length / 2);
+
   return (
     <section>
       <div className="flex items-center justify-between">
@@ -31,6 +33,7 @@ const AboutMembers = () => {
               className="w-5 sm:w-6 md:w-8 h-5 sm:h-6 md:h-8 rotate-180"
             />
           </button>
+
           <button className="swiper-button-next">
             <Image
               src={TriangleArrowIcon}
@@ -45,8 +48,9 @@ const AboutMembers = () => {
 
       <Swiper
         loop
-        spaceBetween={50}
+        className="mt-5"
         slidesPerView={1}
+        spaceBetween={50}
         breakpoints={{
           500: {
             slidesPerView: 2,
@@ -58,9 +62,6 @@ const AboutMembers = () => {
             slidesPerView: 4,
           },
         }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        className="mt-10"
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
@@ -84,8 +85,10 @@ const AboutMembers = () => {
 
       <Swiper
         loop
-        spaceBetween={50}
+        dir="rtl"
+        className="mt-10"
         slidesPerView={1}
+        spaceBetween={50}
         breakpoints={{
           500: {
             slidesPerView: 2,
@@ -97,10 +100,6 @@ const AboutMembers = () => {
             slidesPerView: 4,
           },
         }}
-        dir="rtl"
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        className="mt-10"
         autoplay={{
           delay: 2000,
           disableOnInteraction: false,
